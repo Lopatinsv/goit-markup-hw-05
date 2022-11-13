@@ -28,7 +28,7 @@
         <nav class="header-menu">
           <ul class="nav-list list">
             <li class="nav-item">
-              <a href="./index.html" class="nav-link link">Студія</a>
+              <a href="./index.html" class="nav-link current link">Студія</a>
             </li>
             <li class="nav-item">
               <a href="./portfolio.html" class="nav-link link">Портфоліо</a>
@@ -60,7 +60,7 @@
       <section class="hero">
         <div class="hero-div container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-btn">Замовити послугу</button>
+          <button type="button" class="hero-btn"  data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <!-- BENEFITS -->
@@ -130,6 +130,7 @@
                 width="370"
                 height="294"
               />
+              <div class="overlay"><p class="overlay-text">Десктопні додатки</p></div>
             </li>
             <li class="about-item card-set-items">
               <img
@@ -138,6 +139,7 @@
                 width="370"
                 height="294"
               />
+              <div class="overlay"><p class="overlay-text">Мобільні додатки</p><s/div>
             </li>
             <li class="about-item card-set-items">
               <img
@@ -146,6 +148,7 @@
                 width="370"
                 height="294"
               />
+              <div class="overlay"><p class="overlay-text">Дизайнерські рішення</p></div>
             </li>
           </ul>
         </div>
@@ -350,7 +353,7 @@
                 >
               </li>
               <li class="footer-item">
-                <a href="mailto:info@devstudio.com" class="footer-contact link"
+                <a href="mailto:info@devstudio.com" class="footer-contact link" data-modal-open
                   >info@devstudio.com</a
                 >
               </li>
@@ -386,5 +389,19 @@
        </ul>
        </div>
     </footer>
+
+    <!-- Model window -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" data-modal-close>
+          <svg class="modal-icon" width="11" height="11">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  
+    <script src="./modal.js"></script>
   </body>
 </html>
